@@ -5,7 +5,7 @@
   <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
@@ -14,10 +14,26 @@
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
     
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type='text/javascript'>
+        var jumboHeight = $('.jumbotron').outerHeight();
+        function parallax(){
+            var scrolled = $(window).scrollTop();
+            $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+        }
+        $(window).scroll(function(e){
+            parallax();
+        });
+    </script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></sc
+ript>
+    <![endif]-->
   </head>
 
-  <body>
-
+<body>
     <div class="jumbotron">
       <div class="container">
         <p>WEB | PRINT | DEVELOPMENT | AUDIO | VIDEO </p>
@@ -46,21 +62,23 @@ Though some of the job descriptions on my attached resume may seem diverse, it's
 I think we'd have a great time working together and doing some pretty great things.
 </p><p>
 Lets chat!</p>
-   
+   <br>
+   <HR SIZE="2">
+   <br>
     <div class="row">
         <div class="col-md-4">
             <div class="thumbnail">
-                <img src="">
+                <img src="http://i.imgur.com/4jxylXZ.png">
         </div>
         
         <div class="thumbnail">
-        <img src="">
+        <img src="http://i.imgur.com/WcHT1nY.png">
     </div>
     </div>
     
     <div class="col-md-4">
     <div class="thumbnail">
-        <img src="">
+        <img src="http://i.imgur.com/5HQWo17.png">
     </div>
     
     <div class="thumbnail">
@@ -77,13 +95,13 @@ Lets chat!</p>
     </div>
     
     <div class="learn-more">
-	<div class="container">
-	<div class="row">
-	<div class="col-md-4">
-		<div>
-	      <div>
-	    </div>
-	  </div>
-	</div>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-4">
+        <div>
+          <div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
